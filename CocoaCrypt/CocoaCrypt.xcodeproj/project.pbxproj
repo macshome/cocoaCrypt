@@ -1,0 +1,412 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9C0917651A23D16A00D0B7F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0917641A23D16A00D0B7F6 /* AppDelegate.swift */; };
+		9C0917671A23D16A00D0B7F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0917661A23D16A00D0B7F6 /* ViewController.swift */; };
+		9C0917691A23D16A00D0B7F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0917681A23D16A00D0B7F6 /* Images.xcassets */; };
+		9C09176C1A23D16A00D0B7F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C09176A1A23D16A00D0B7F6 /* Main.storyboard */; };
+		9C0917781A23D16A00D0B7F6 /* CocoaCryptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0917771A23D16A00D0B7F6 /* CocoaCryptTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9C0917721A23D16A00D0B7F6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9C0917571A23D16A00D0B7F6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9C09175E1A23D16A00D0B7F6;
+			remoteInfo = CocoaCrypt;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9C09175F1A23D16A00D0B7F6 /* CocoaCrypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CocoaCrypt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0917631A23D16A00D0B7F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C0917641A23D16A00D0B7F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9C0917661A23D16A00D0B7F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C0917681A23D16A00D0B7F6 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9C09176B1A23D16A00D0B7F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9C0917711A23D16A00D0B7F6 /* CocoaCryptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaCryptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9C0917761A23D16A00D0B7F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C0917771A23D16A00D0B7F6 /* CocoaCryptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaCryptTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9C09175C1A23D16A00D0B7F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C09176E1A23D16A00D0B7F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9C0917561A23D16A00D0B7F6 = {
+			isa = PBXGroup;
+			children = (
+				9C0917611A23D16A00D0B7F6 /* CocoaCrypt */,
+				9C0917741A23D16A00D0B7F6 /* CocoaCryptTests */,
+				9C0917601A23D16A00D0B7F6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9C0917601A23D16A00D0B7F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9C09175F1A23D16A00D0B7F6 /* CocoaCrypt.app */,
+				9C0917711A23D16A00D0B7F6 /* CocoaCryptTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9C0917611A23D16A00D0B7F6 /* CocoaCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				9C0917641A23D16A00D0B7F6 /* AppDelegate.swift */,
+				9C0917661A23D16A00D0B7F6 /* ViewController.swift */,
+				9C0917681A23D16A00D0B7F6 /* Images.xcassets */,
+				9C09176A1A23D16A00D0B7F6 /* Main.storyboard */,
+				9C0917621A23D16A00D0B7F6 /* Supporting Files */,
+			);
+			path = CocoaCrypt;
+			sourceTree = "<group>";
+		};
+		9C0917621A23D16A00D0B7F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C0917631A23D16A00D0B7F6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9C0917741A23D16A00D0B7F6 /* CocoaCryptTests */ = {
+			isa = PBXGroup;
+			children = (
+				9C0917771A23D16A00D0B7F6 /* CocoaCryptTests.swift */,
+				9C0917751A23D16A00D0B7F6 /* Supporting Files */,
+			);
+			path = CocoaCryptTests;
+			sourceTree = "<group>";
+		};
+		9C0917751A23D16A00D0B7F6 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9C0917761A23D16A00D0B7F6 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9C09175E1A23D16A00D0B7F6 /* CocoaCrypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C09177B1A23D16A00D0B7F6 /* Build configuration list for PBXNativeTarget "CocoaCrypt" */;
+			buildPhases = (
+				9C09175B1A23D16A00D0B7F6 /* Sources */,
+				9C09175C1A23D16A00D0B7F6 /* Frameworks */,
+				9C09175D1A23D16A00D0B7F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CocoaCrypt;
+			productName = CocoaCrypt;
+			productReference = 9C09175F1A23D16A00D0B7F6 /* CocoaCrypt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9C0917701A23D16A00D0B7F6 /* CocoaCryptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C09177E1A23D16A00D0B7F6 /* Build configuration list for PBXNativeTarget "CocoaCryptTests" */;
+			buildPhases = (
+				9C09176D1A23D16A00D0B7F6 /* Sources */,
+				9C09176E1A23D16A00D0B7F6 /* Frameworks */,
+				9C09176F1A23D16A00D0B7F6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9C0917731A23D16A00D0B7F6 /* PBXTargetDependency */,
+			);
+			name = CocoaCryptTests;
+			productName = CocoaCryptTests;
+			productReference = 9C0917711A23D16A00D0B7F6 /* CocoaCryptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9C0917571A23D16A00D0B7F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Josh Wisenbaker";
+				TargetAttributes = {
+					9C09175E1A23D16A00D0B7F6 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					9C0917701A23D16A00D0B7F6 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 9C09175E1A23D16A00D0B7F6;
+					};
+				};
+			};
+			buildConfigurationList = 9C09175A1A23D16A00D0B7F6 /* Build configuration list for PBXProject "CocoaCrypt" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9C0917561A23D16A00D0B7F6;
+			productRefGroup = 9C0917601A23D16A00D0B7F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9C09175E1A23D16A00D0B7F6 /* CocoaCrypt */,
+				9C0917701A23D16A00D0B7F6 /* CocoaCryptTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9C09175D1A23D16A00D0B7F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0917691A23D16A00D0B7F6 /* Images.xcassets in Resources */,
+				9C09176C1A23D16A00D0B7F6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C09176F1A23D16A00D0B7F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9C09175B1A23D16A00D0B7F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0917671A23D16A00D0B7F6 /* ViewController.swift in Sources */,
+				9C0917651A23D16A00D0B7F6 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9C09176D1A23D16A00D0B7F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C0917781A23D16A00D0B7F6 /* CocoaCryptTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9C0917731A23D16A00D0B7F6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9C09175E1A23D16A00D0B7F6 /* CocoaCrypt */;
+			targetProxy = 9C0917721A23D16A00D0B7F6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9C09176A1A23D16A00D0B7F6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9C09176B1A23D16A00D0B7F6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9C0917791A23D16A00D0B7F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9C09177A1A23D16A00D0B7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9C09177C1A23D16A00D0B7F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CocoaCrypt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9C09177D1A23D16A00D0B7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CocoaCrypt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9C09177F1A23D16A00D0B7F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CocoaCryptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoaCrypt.app/Contents/MacOS/CocoaCrypt";
+			};
+			name = Debug;
+		};
+		9C0917801A23D16A00D0B7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CocoaCryptTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CocoaCrypt.app/Contents/MacOS/CocoaCrypt";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9C09175A1A23D16A00D0B7F6 /* Build configuration list for PBXProject "CocoaCrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C0917791A23D16A00D0B7F6 /* Debug */,
+				9C09177A1A23D16A00D0B7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C09177B1A23D16A00D0B7F6 /* Build configuration list for PBXNativeTarget "CocoaCrypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C09177C1A23D16A00D0B7F6 /* Debug */,
+				9C09177D1A23D16A00D0B7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9C09177E1A23D16A00D0B7F6 /* Build configuration list for PBXNativeTarget "CocoaCryptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9C09177F1A23D16A00D0B7F6 /* Debug */,
+				9C0917801A23D16A00D0B7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9C0917571A23D16A00D0B7F6 /* Project object */;
+}
