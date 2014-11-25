@@ -11,11 +11,13 @@
 		9C0917671A23D16A00D0B7F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0917661A23D16A00D0B7F6 /* ViewController.swift */; };
 		9C0917691A23D16A00D0B7F6 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C0917681A23D16A00D0B7F6 /* Images.xcassets */; };
 		9C09176C1A23D16A00D0B7F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C09176A1A23D16A00D0B7F6 /* Main.storyboard */; };
-		9C0917781A23D16A00D0B7F6 /* CocoaCypherAnalyzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0917771A23D16A00D0B7F6 /* CocoaCypherAnalyzerTests.swift */; };
-		9C0917821A23D58000D0B7F6 /* CypherAnazlyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0917811A23D58000D0B7F6 /* CypherAnazlyer.swift */; };
-		9C0917831A23D5A000D0B7F6 /* CypherAnazlyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0917811A23D58000D0B7F6 /* CypherAnazlyer.swift */; };
+		9C0917781A23D16A00D0B7F6 /* CocoaCipherAnalyzerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0917771A23D16A00D0B7F6 /* CocoaCipherAnalyzerTests.swift */; };
+		9C0917821A23D58000D0B7F6 /* CipherAnazlyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0917811A23D58000D0B7F6 /* CipherAnazlyer.swift */; };
+		9C0917831A23D5A000D0B7F6 /* CipherAnazlyer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0917811A23D58000D0B7F6 /* CipherAnazlyer.swift */; };
 		9C0917841A23D5A300D0B7F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0917641A23D16A00D0B7F6 /* AppDelegate.swift */; };
 		9C0917851A23D5A300D0B7F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C0917661A23D16A00D0B7F6 /* ViewController.swift */; };
+		9C6FAFBB1A24F38E00A04219 /* CharacterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FAFBA1A24F38E00A04219 /* CharacterExtension.swift */; };
+		9C6FAFBC1A24F3B100A04219 /* CharacterExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6FAFBA1A24F38E00A04219 /* CharacterExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +39,9 @@
 		9C09176B1A23D16A00D0B7F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C0917711A23D16A00D0B7F6 /* CocoaCryptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CocoaCryptTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C0917761A23D16A00D0B7F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9C0917771A23D16A00D0B7F6 /* CocoaCypherAnalyzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaCypherAnalyzerTests.swift; sourceTree = "<group>"; };
-		9C0917811A23D58000D0B7F6 /* CypherAnazlyer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CypherAnazlyer.swift; sourceTree = "<group>"; };
+		9C0917771A23D16A00D0B7F6 /* CocoaCipherAnalyzerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaCipherAnalyzerTests.swift; sourceTree = "<group>"; };
+		9C0917811A23D58000D0B7F6 /* CipherAnazlyer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CipherAnazlyer.swift; sourceTree = "<group>"; };
+		9C6FAFBA1A24F38E00A04219 /* CharacterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +88,8 @@
 				9C0917681A23D16A00D0B7F6 /* Images.xcassets */,
 				9C09176A1A23D16A00D0B7F6 /* Main.storyboard */,
 				9C0917621A23D16A00D0B7F6 /* Supporting Files */,
-				9C0917811A23D58000D0B7F6 /* CypherAnazlyer.swift */,
+				9C0917811A23D58000D0B7F6 /* CipherAnazlyer.swift */,
+				9C6FAFBA1A24F38E00A04219 /* CharacterExtension.swift */,
 			);
 			path = CocoaCrypt;
 			sourceTree = "<group>";
@@ -101,7 +105,7 @@
 		9C0917741A23D16A00D0B7F6 /* CocoaCryptTests */ = {
 			isa = PBXGroup;
 			children = (
-				9C0917771A23D16A00D0B7F6 /* CocoaCypherAnalyzerTests.swift */,
+				9C0917771A23D16A00D0B7F6 /* CocoaCipherAnalyzerTests.swift */,
 				9C0917751A23D16A00D0B7F6 /* Supporting Files */,
 			);
 			path = CocoaCryptTests;
@@ -215,7 +219,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C0917671A23D16A00D0B7F6 /* ViewController.swift in Sources */,
-				9C0917821A23D58000D0B7F6 /* CypherAnazlyer.swift in Sources */,
+				9C6FAFBB1A24F38E00A04219 /* CharacterExtension.swift in Sources */,
+				9C0917821A23D58000D0B7F6 /* CipherAnazlyer.swift in Sources */,
 				9C0917651A23D16A00D0B7F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,10 +229,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C6FAFBC1A24F3B100A04219 /* CharacterExtension.swift in Sources */,
 				9C0917841A23D5A300D0B7F6 /* AppDelegate.swift in Sources */,
-				9C0917831A23D5A000D0B7F6 /* CypherAnazlyer.swift in Sources */,
+				9C0917831A23D5A000D0B7F6 /* CipherAnazlyer.swift in Sources */,
 				9C0917851A23D5A300D0B7F6 /* ViewController.swift in Sources */,
-				9C0917781A23D16A00D0B7F6 /* CocoaCypherAnalyzerTests.swift in Sources */,
+				9C0917781A23D16A00D0B7F6 /* CocoaCipherAnalyzerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
