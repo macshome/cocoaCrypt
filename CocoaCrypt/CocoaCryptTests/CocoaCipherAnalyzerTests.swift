@@ -11,32 +11,31 @@ import XCTest
 
 class CocoaCipherAnalyzerTests: XCTestCase {
 
-    let analyzer = CipherAnalyzer()
+    var testCryptogram: Cryptogram!
+
     let cipherText = "Ubty lzm vz dy xzq j kzg dyrtqadtu, D rbdyn j vzzs rbdyv rz jen de dx rbtl tatq oqtee pbjqvte."
+    var testAnalyzer: CipherAnalyzer!
 
-    func testCanInitAypherAnalyzer() {
+    override func setUp() {
+        testCryptogram = Cryptogram(cipherText: cipherText)
+        testAnalyzer = CipherAnalyzer(WithCipherText: testCryptogram)
+    }
 
-        XCTAssertNotNil(analyzer, "Could not init the CipherAnalyzer!")
+    func testCanInitCipherAnalyzer() {
+
+        XCTAssertNotNil(testAnalyzer, "Could not init the CipherAnalyzer!")
     }
 
     func testFrequencyAnalysis() {
-        let frequencyAnalysisResults = analyzer.frequencyAnalysisFor(cipherText)
-        let qResult = frequencyAnalysisResults["Q"]
+        testAnalyzer.frequencyAnalysis()
+        let qResult = testAnalyzer.cryptogram?.frequencyAnalysis?["Q"]
         XCTAssert(qResult == 5, "Found the wrong number of the letter q. Expected: 5, Found: \(qResult)")
-    }
+    } 
 
-    func testInputSafety() {
-        let frequencyAnalysisResults = analyzer.frequencyAnalysisFor(" . .    ,,   #  42")
-        for result in frequencyAnalysisResults.values {
-            if result != 0 {
-                XCTFail("Found a result for a letter where there should be none")
-            }
-        }
-    }
 
     func testFrequencyAnalyzerPerformance() {
         self.measureBlock() {
-            let frequencyAnalysisResults = self.analyzer.frequencyAnalysisFor(self.cipherText)
+            self.testAnalyzer.frequencyAnalysis()
         }
     }
     
