@@ -20,16 +20,21 @@ class CipherAnalyzer {
     }
 
     func frequencyAnalysis()  {
-        var frequencyAnalysis = frequencyDict
 
-        let cipherChars = Array(cryptogram!.cipherText.uppercaseString)
+        if cryptogram? != nil {
+            var frequencyAnalysis = frequencyDict
 
-        for char in cipherChars {
-            if char.isMemberOf(NSCharacterSet.letterCharacterSet()) {
-                frequencyAnalysis["\(char)"] = ++frequencyAnalysis["\(char)"]!
+            let cipherChars = Array(cryptogram!.cipherText.uppercaseString)
+
+            for char in cipherChars {
+                if char.isMemberOf(NSCharacterSet.letterCharacterSet()) {
+                    frequencyAnalysis["\(char)"] = ++frequencyAnalysis["\(char)"]!
+                }
             }
+            cryptogram?.frequencyAnalysis = frequencyAnalysis
         }
-        cryptogram?.frequencyAnalysis = frequencyAnalysis
     }
+
+    
     
 }

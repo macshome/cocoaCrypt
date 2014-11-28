@@ -32,11 +32,12 @@ class CocoaCipherAnalyzerTests: XCTestCase {
         XCTAssert(qResult == 5, "Found the wrong number of the letter q. Expected: 5, Found: \(qResult)")
     } 
 
-
     func testFrequencyAnalyzerPerformance() {
         self.measureBlock() {
             self.testAnalyzer.frequencyAnalysis()
         }
     }
+
+    
     
 }
