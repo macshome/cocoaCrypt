@@ -29,7 +29,8 @@ class CocoaCipherAnalyzerTests: XCTestCase {
     func testFrequencyAnalysis() {
         testAnalyzer.frequencyAnalysis()
         let qResult = testAnalyzer.cryptogram?.frequencyAnalysis?["Q"]
-        XCTAssert(qResult == 5, "Found the wrong number of the letter q. Expected: 5, Found: \(qResult)")
+        XCTAssert(qResult == 5, "Found the wrong number of the letter q. Expected: 5, Found: \(qResult!)")
+        
     } 
 
     func testFrequencyAnalyzerPerformance() {
@@ -38,6 +39,13 @@ class CocoaCipherAnalyzerTests: XCTestCase {
         }
     }
 
+    func testWordList() {
+        testAnalyzer.generateWordList()
+        XCTAssertNotNil(testAnalyzer.cryptogram?.wordList, "Word list should not be nil")
+
+        let firstResult = testAnalyzer.cryptogram?.wordList?["dyrtqadtu"]
+        XCTAssert(firstResult == 9, "Found the wrong count of the word dyrtqadtu. Expected: 9, Found: \(firstResult!)")
+    }
     
     
 }

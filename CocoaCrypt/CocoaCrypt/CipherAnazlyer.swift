@@ -21,20 +21,36 @@ class CipherAnalyzer {
 
     func frequencyAnalysis()  {
 
-        if cryptogram? != nil {
+        if let currentCryptogram = cryptogram?  {
+
             var frequencyAnalysis = frequencyDict
 
-            let cipherChars = Array(cryptogram!.cipherText.uppercaseString)
+            let cipherChars = Array(currentCryptogram.cipherText.uppercaseString)
 
             for char in cipherChars {
                 if char.isMemberOf(NSCharacterSet.letterCharacterSet()) {
                     frequencyAnalysis["\(char)"] = ++frequencyAnalysis["\(char)"]!
                 }
             }
-            cryptogram?.frequencyAnalysis = frequencyAnalysis
+
+            currentCryptogram.frequencyAnalysis = frequencyAnalysis
         }
     }
 
     
+    func generateWordList() {
+
+        if let currentCryptogram = cryptogram? {
+            var wordAnalysis = [String: Int]()
+            
+            currentCryptogram.cipherText.enumerateSubstringsInRange(Range(start: currentCryptogram.cipherText.startIndex, end: currentCryptogram.cipherText.endIndex),
+                options: NSStringEnumerationOptions.ByWords) { (substring, substringRange, enclosingRange, bool) -> () in
+                    wordAnalysis[substring] = countElements(substring)
+            }
+
+            currentCryptogram.wordList = wordAnalysis
+        }
+
+    }
     
 }

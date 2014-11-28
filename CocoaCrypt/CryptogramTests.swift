@@ -17,6 +17,9 @@ class CryptogramTests: XCTestCase {
         testCryptogram.plainText = "plain text"
         testCryptogram.frequencyAnalysis = ["A" : 1]
         testCryptogram.cipherTable = ["A" : "B", "Z" : nil]
+        testCryptogram.wordList = ["Foo" : 3]
+        testCryptogram.hasCompletedFrequencyAnalysis = true
+
     }
 
     func testCryptogramProperties() {
@@ -27,8 +30,12 @@ class CryptogramTests: XCTestCase {
 
         XCTAssert(testCryptogram.frequencyAnalysis! == ["A" : 1], "Did not find expected frequencyAnalysis. Found: \(testCryptogram.frequencyAnalysis)")
 
-        println(testCryptogram.cipherTable)
+        XCTAssert(testCryptogram.wordList! == ["Foo" : 3], "Did not find expected wordList. Found: \(testCryptogram.wordList!)")
 
-        XCTAssert(testCryptogram.cipherTable != nil, "Foo")
+        XCTAssert(testCryptogram.cipherTable?["A"]? == "B", "Did not find expected value for ciperTable[\"A\"]")
+        XCTAssertNil(testCryptogram.cipherTable?["Z"]?, "Did not find expected value for ciperTable[\"Z\"]")
+
+        XCTAssert(testCryptogram.hasCompletedFrequencyAnalysis, "Frequency analysis bool should be true. It is not.")
+        XCTAssertFalse(testCryptogram.hasGeneratedWordList, "Word list bool should be false. It is true")
     }
 }
