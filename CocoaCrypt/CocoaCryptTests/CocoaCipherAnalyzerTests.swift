@@ -30,8 +30,20 @@ class CocoaCipherAnalyzerTests: XCTestCase {
         testAnalyzer.frequencyAnalysis()
         let qResult = testAnalyzer.cryptogram?.frequencyAnalysis?["Q"]
         XCTAssert(qResult == 5, "Found the wrong number of the letter q. Expected: 5, Found: \(qResult!)")
-        
-    } 
+
+        XCTAssert(testAnalyzer.cryptogram?.hasCompletedFrequencyAnalysis == true, "Completion flag not set on frequency analysis.")
+
+        if let frequencyResults = testAnalyzer.cryptogram?.frequencyAnalysis? {
+            for (key, value) in frequencyResults {
+                if value == 0 {
+                    XCTFail("There shouldn't be any 0 values in the frequency analysis and we found one.")
+                }
+            }
+        }
+
+    }
+
+
 
     func testFrequencyAnalyzerPerformance() {
         self.measureBlock() {
@@ -45,6 +57,8 @@ class CocoaCipherAnalyzerTests: XCTestCase {
 
         let firstResult = testAnalyzer.cryptogram?.wordList?["dyrtqadtu"]
         XCTAssert(firstResult == 9, "Found the wrong count of the word dyrtqadtu. Expected: 9, Found: \(firstResult!)")
+
+        XCTAssert(testAnalyzer.cryptogram?.hasGeneratedWordList == true, "Completion flag not set on word list generator.")
     }
     
     

@@ -33,24 +33,34 @@ class CipherAnalyzer {
                 }
             }
 
-            currentCryptogram.frequencyAnalysis = frequencyAnalysis
+            var tempDict = frequencyAnalysis
+
+            for (key, value) in frequencyAnalysis {
+                if value == 0 {
+                    tempDict["\(key)"] = nil
+                }
+            }
+
+            currentCryptogram.frequencyAnalysis = tempDict
+            currentCryptogram.hasCompletedFrequencyAnalysis = true
         }
     }
 
-    
+
     func generateWordList() {
 
         if let currentCryptogram = cryptogram? {
             var wordAnalysis = [String: Int]()
-            
+
             currentCryptogram.cipherText.enumerateSubstringsInRange(Range(start: currentCryptogram.cipherText.startIndex, end: currentCryptogram.cipherText.endIndex),
                 options: NSStringEnumerationOptions.ByWords) { (substring, substringRange, enclosingRange, bool) -> () in
                     wordAnalysis[substring] = countElements(substring)
             }
 
             currentCryptogram.wordList = wordAnalysis
+            currentCryptogram.hasGeneratedWordList = true
         }
-
+        
     }
     
 }
