@@ -11,12 +11,14 @@ import Foundation
 
 class CipherAnalyzer {
 
-    /// A Cryptogram struct.
+    /// A Cryptogram.
     var cryptogram: Cryptogram?
 
 
-    init(WithCipherText inputCryptogram: Cryptogram) {
+    init(cryptogram inputCryptogram: Cryptogram) {
         cryptogram = inputCryptogram
+        frequencyAnalysis()
+        generateWordList()
     }
 
     func frequencyAnalysis()  {

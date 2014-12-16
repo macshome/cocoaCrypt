@@ -23,6 +23,12 @@
 		9C7C69FF1A2624750029B74A /* CryptogramTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C69FE1A2624750029B74A /* CryptogramTests.swift */; };
 		9C7C6A011A263AB10029B74A /* Cryptogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C6A001A263AB10029B74A /* Cryptogram.swift */; };
 		9C7C6A021A263AB10029B74A /* Cryptogram.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C7C6A001A263AB10029B74A /* Cryptogram.swift */; };
+		9C8B5E871A40D311007A544C /* CipherSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B5E861A40D311007A544C /* CipherSolver.swift */; };
+		9C8B5E881A40D311007A544C /* CipherSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B5E861A40D311007A544C /* CipherSolver.swift */; };
+		9C8B5E8B1A40D380007A544C /* CipherSolverTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B5E891A40D380007A544C /* CipherSolverTests.swift */; };
+		9C8B5E8E1A40D500007A544C /* CryptogramSolverStructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B5E8C1A40D500007A544C /* CryptogramSolverStructTests.swift */; };
+		9C8B5E901A40D55E007A544C /* CryptogramSolverStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B5E8F1A40D55E007A544C /* CryptogramSolverStruct.swift */; };
+		9C8B5E911A40D55E007A544C /* CryptogramSolverStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8B5E8F1A40D55E007A544C /* CryptogramSolverStruct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,10 @@
 		9C6FAFBA1A24F38E00A04219 /* CharacterExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterExtension.swift; sourceTree = "<group>"; };
 		9C7C69FE1A2624750029B74A /* CryptogramTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CryptogramTests.swift; path = ../CryptogramTests.swift; sourceTree = "<group>"; };
 		9C7C6A001A263AB10029B74A /* Cryptogram.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cryptogram.swift; sourceTree = "<group>"; };
+		9C8B5E861A40D311007A544C /* CipherSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CipherSolver.swift; sourceTree = "<group>"; };
+		9C8B5E891A40D380007A544C /* CipherSolverTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CipherSolverTests.swift; sourceTree = "<group>"; };
+		9C8B5E8C1A40D500007A544C /* CryptogramSolverStructTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptogramSolverStructTests.swift; sourceTree = "<group>"; };
+		9C8B5E8F1A40D55E007A544C /* CryptogramSolverStruct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CryptogramSolverStruct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +109,10 @@
 				9C09176A1A23D16A00D0B7F6 /* Main.storyboard */,
 				9C0917621A23D16A00D0B7F6 /* Supporting Files */,
 				9C0917811A23D58000D0B7F6 /* CipherAnazlyer.swift */,
+				9C8B5E861A40D311007A544C /* CipherSolver.swift */,
 				9C2EA4391A251FAC00859874 /* EnglishFrequencyTables.swift */,
 				9C7C6A001A263AB10029B74A /* Cryptogram.swift */,
+				9C8B5E8F1A40D55E007A544C /* CryptogramSolverStruct.swift */,
 				9C6FAFBA1A24F38E00A04219 /* CharacterExtension.swift */,
 			);
 			path = CocoaCrypt;
@@ -117,6 +129,8 @@
 		9C0917741A23D16A00D0B7F6 /* CocoaCryptTests */ = {
 			isa = PBXGroup;
 			children = (
+				9C8B5E8C1A40D500007A544C /* CryptogramSolverStructTests.swift */,
+				9C8B5E891A40D380007A544C /* CipherSolverTests.swift */,
 				9C7C69FE1A2624750029B74A /* CryptogramTests.swift */,
 				9C0917771A23D16A00D0B7F6 /* CocoaCipherAnalyzerTests.swift */,
 				9C0917751A23D16A00D0B7F6 /* Supporting Files */,
@@ -235,8 +249,10 @@
 				9C7C6A011A263AB10029B74A /* Cryptogram.swift in Sources */,
 				9C6FAFBB1A24F38E00A04219 /* CharacterExtension.swift in Sources */,
 				9C0917821A23D58000D0B7F6 /* CipherAnazlyer.swift in Sources */,
+				9C8B5E871A40D311007A544C /* CipherSolver.swift in Sources */,
 				9C0917651A23D16A00D0B7F6 /* AppDelegate.swift in Sources */,
 				9C2EA43A1A251FAC00859874 /* EnglishFrequencyTables.swift in Sources */,
+				9C8B5E901A40D55E007A544C /* CryptogramSolverStruct.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,10 +260,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C8B5E8E1A40D500007A544C /* CryptogramSolverStructTests.swift in Sources */,
 				9C6FAFBC1A24F3B100A04219 /* CharacterExtension.swift in Sources */,
 				9C0917841A23D5A300D0B7F6 /* AppDelegate.swift in Sources */,
+				9C8B5E911A40D55E007A544C /* CryptogramSolverStruct.swift in Sources */,
 				9C7C69FF1A2624750029B74A /* CryptogramTests.swift in Sources */,
+				9C8B5E881A40D311007A544C /* CipherSolver.swift in Sources */,
 				9C7C6A021A263AB10029B74A /* Cryptogram.swift in Sources */,
+				9C8B5E8B1A40D380007A544C /* CipherSolverTests.swift in Sources */,
 				9C0917831A23D5A000D0B7F6 /* CipherAnazlyer.swift in Sources */,
 				9C0917851A23D5A300D0B7F6 /* ViewController.swift in Sources */,
 				9C2EA43B1A251FAC00859874 /* EnglishFrequencyTables.swift in Sources */,

@@ -11,14 +11,13 @@ import XCTest
 
 class CocoaCipherAnalyzerTests: XCTestCase {
 
-    var testCryptogram: Cryptogram!
-
     let cipherText = "Ubty lzm vz dy xzq j kzg dyrtqadtu, D rbdyn j vzzs rbdyv rz jen de dx rbtl tatq oqtee pbjqvte."
+    var testCryptogram: Cryptogram!
     var testAnalyzer: CipherAnalyzer!
 
     override func setUp() {
         testCryptogram = Cryptogram(cipherText: cipherText)
-        testAnalyzer = CipherAnalyzer(WithCipherText: testCryptogram)
+        testAnalyzer = CipherAnalyzer(cryptogram: testCryptogram)
     }
 
     func testCanInitCipherAnalyzer() {
